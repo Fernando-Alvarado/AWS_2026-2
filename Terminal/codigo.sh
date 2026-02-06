@@ -109,4 +109,32 @@ ls */????.txt
 
 
 
+# Practica de Permisos en terminal-----------------------------------------------------------------
+
+#Cada archivo y carpeta tiene tres tipos de permisos:
+#Lectura ( r ) .
+#Escritura  ( w ) .
+#Ejecución  ( x ) .
+
+# Cada permiso se le aplica a 3 tipos de usuarios:
+#  El propietario ( u ).
+#  El grupo al que pertenece el propietario ( g ).
+#  Personas externas a los grupos u otros ( o ).
+#  Todos (a).
+# Tipo de archivo
+#  - archivo normal
+#  d directorio
+# Que hacer 
+#  + Poner Permiso
+#  - Quita permiso
+
+ls -l # Muestra los permisos de los archivos y carpetas
+
+
+chmod u+o ejemplo.py
+
+
+chmod 744 ejemplo.py
+
+
 # https://www.canva.com/design/DAGz1v5cEz4/A_T1t2LJUAywxhCxIZRJBA/edit?utm_content=DAGz1v5cEz4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
