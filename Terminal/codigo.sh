@@ -10,6 +10,8 @@ uname -a # Da informacion del sistema operativo
 man echo # Abre el manual del comando echo
 
 
+
+
 # Ejercicio mas completo ----------------------------------------------------------------
 mkdir pruebas
 cd pruebas
@@ -33,6 +35,7 @@ echo "Contenido para SHA512" > sha512/info.txt
 
 
 
+
 # Practica 2 ----------------------------------------------------------------
 
 # Creamos una carpeta para practicar y entramos en ella
@@ -45,6 +48,7 @@ echo "Segunda línea de notas" >> notas.txt
 echo "Archivo de configuración de prueba" > config.conf
 echo "Este es un registro de errores" > errores.log
 
+
 # Revisamos qué tipo de archivo es cada uno
 file notas.txt
 file config.conf
@@ -53,6 +57,7 @@ file errores.log
 # Copiamos y movemos archivos
 cp notas.txt copia_notas.txt
 mv config.conf configuracion.conf # Renombra el archivo config.conf a configuracion.conf
+
 
 # Vemos el contenido de los archivos
 cat notas.txt
