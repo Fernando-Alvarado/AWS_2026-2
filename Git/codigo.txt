@@ -1,0 +1,113 @@
+git --version
+
+mkdir Proyecto
+cd Proyecto
+
+
+git init #Comando principal de nuestra rama, crea una carpeta oculpa
+
+ls -a  # te permite ver la carpeta oculta 
+
+git config --global init.defaultBranch main  # “A partir de ahora, cada vez que haga git init, la rama inicial se llamará main”.
+
+git branch -m main # Renombra la rama actual a main. -m (move) Opción que permite renombrar una rama. main Nuevo nombre asignado a la rama actual.
+
+git branch # Nos permite ver la ramas de nuestro repositorio
+
+git --help # Nos permite ver la documentacion de git 
+
+git config --global user.name "Enrique " # Te permite poner tu uruario 
+
+git config --global user.name #Te permite ver tu usuario  
+
+git config --global user.email # Te permite ver tu correo 
+
+git config --list
+
+
+
+nano testing.txt # Creamo un archivo 
+
+git status #Nos habla del estado de nuestro archivo 
+
+
+git rm --cached teing.txt # Quitamos elementos de staging area, que no ha trenido ningun trabajo 
+
+git add .   #Agregamos elemento al staging area
+git add -A 
+
+
+
+git commit -m "segundo archivo creado"
+
+
+git log # Aparece la bitacora de los cambios
+
+
+
+# Agregar mas cosas a nuestro elemento 
+
+
+------------------ Ramas 
+
+git branch # Crear una nueva rama
+
+
+git checkout -b amin # Crear reama y cambiar a esa rama 
+
+git checkout main # Nos permite cambiar de rama a la main
+git switch main 
+
+
+git merge amin   # Unimos dos ramas, para poder trabajar 
+
+
+git branch -D amin # Borramos la rama que ya no nos interasa, por que ya la usamos 
+
+
+
+# -------------Manejo de historial ---------------------------------------
+
+
+git log # Historial 
+
+nano error.txt
+
+
+git add -A, git commit -m # PASO sigueinte
+
+
+git revert cbf76cd6bd68f5576c9372178aa7565750cf9f46   #Haicnedo un revert, siempre poner quier lo hizo para que tu team sepa
+
+git log 
+
+ls
+
+
+#Ahora regresaremos al inicio 
+
+git reset --hard 0ca46dbdf636c39ea0cb7d19fd9f572ae921bf07
+
+
+
+# ----------- Git tag 
+
+
+git tag -a v1.0 -m "Mi primera version "   # Ponemos una etiqueta 
+
+
+git tag #   Me permite buscar en mi lista de tags
+
+
+git show v1.0 # Te permite ir a esa etiqueta para ver quien lo hizo 
+
+
+git tag -d v1.0 # Elimina un tag, pero no toca el historial 
+
+
+
+
+# Ir a otros commit ------------------
+
+
+git checkout 3eb77a01a02017e3b42e3ae897869766be3dffb4 # Vamos a otro commit 

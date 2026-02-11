@@ -1,16 +1,13 @@
-# Codigo para el fizz buzz
+x = [2, 7, 11, 15]
+y = 26
 
-def fizz_buzz(n):
-    contenedor = []
-    for i in range(1, n + 1):
-        if i % 3 == 0 and i % 5 == 0:
-            contenedor.append("FizzBuzz")
-        elif i % 3 == 0:
-            contenedor.append("Fizz")
-        elif i % 5 == 0:
-            contenedor.append("Buzz")
-        else:
-            contenedor.append(str(i))
-    return contenedor
+def two_sum(x, y):
+# i y j se comportan como posiciones de la lista
+# tamaño
+  for i in range(len(x)):
+    for j in range(len(x)):
+      if x[i] + x[j] == y:
+        return i, j
 
-print(fizz_buzz(15))
+resultado = two_sum(x, y)
+print(resultado)
