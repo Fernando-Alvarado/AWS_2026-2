@@ -1,0 +1,15 @@
+#-------------------------------------
+#Antes de empezar a ver github, tenemos que partender sobre conflictos 
+
+
+git branch 
+
+nano conflict.txt
+
+git checkout -b developer
+
+
+# Hascemos cambios en un archivo, para generar un conflicto 
+
+# Reparamos el conflicto 
+
